@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @media only screen and (min-width:600px) and (max-width:2000px) {
+        .container {
+            width: auto;
+            display: grid;
+            grid-template-areas: 'nav nav nav'
+                'leval oval egg'
+                'footer footer footer';
+        }
+    }
+
+    @media only screen and (min-width:600px) and (max-width:2000px) {
+        .item-1 {
+            grid-area: nav;
+            height: 355px;
+            width: 1450px;
+        }
+    }
+
+
+
+    @media only screen and (min-width:600px) and (max-width:900px) {
+        .item-2 {
+            grid-area: leval;
+            height: 40vh;
+            width: 500px;
+            background: bisque;
+            border: 1px;
+        }
+    }
+
+
+    p {
+        margin: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-woed;
+        text-align: center;
+        font-size: large;
+
+    }
+
+    @media only screen and (min-width:600px) and (max-width:900px) {
+        .item-3 {
+            grid-area: oval;
+            background-color: green;
+            border: 1px;
+            height: 40vh;
+            width: 500px;
+
+        }
+    }
+
+    @media only screen and (min-width:600px) and (max-width:900px) {
+
+        .item-4 {
+            grid-area: egg;
+            background-color: bisque;
+            border: 1px;
+            height: 40vh;
+            width: 450px;
+            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: px;
+
+        }
+    }
+
+
+    .item-5 {
+        grid-area: footer;
+        background-color: #eaeaea;
+        height: 70px;
+    }
+
+    img {
+        height: 350px;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-size: large;
+        text-align: center;
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item-1">
+            <img src="./assest/image/hap1.avif">
+        </div>
+        <div class="item-2">
+            <p>Happiness</p>
+            <p>In general, happiness is understood as the positive emotions we have in regards to the pleasurable
+                activities we take part in through our daily lives.</p>
+
+            <p>Pleasure, comfort, gratitude, hope, and inspiration are examples of positive emotions that increase our
+                happiness and move us to flourish. In scientific literature, happiness is referred to as hedonia the
+                presence of positive emotions and the absence of negative emotions.</p>
+
+            <p>In a more broad understanding, human wellbeing is made up of both hedonic and Eudaimonic principles, the
+                literature on which is vast and describes our personal meaning and purpose in life.</p>
+            </p>
+        </div>
+        <div class="item-3">
+            <img src="./assest/image/hap3.jpeg">
+        </div>
+        <div class=" item-4">
+            <p>Happy people live with purpose. They find joy in lasting relationships, working toward their goals, and
+                living according to their values. The happy person is not enamored with material goods or luxury
+                vacations. This person is fine with the simple pleasures of sitting under a tree, enjoying a cup of tea.
+                Here are a few of the outward signs that someone is content.</p>
+
+            <p>Is open to learning new things</p>
+            <p>Is high in humility and patience</p>
+            <p>Is often grateful</p>
+            <p>Exercises self-care</p>
+            <p>Enjoys healthy relationships</p>
+            <p>Lives with meaning and purpose</p>
+        </div>
+        <div class="item item-5">
+            <h1>SYED SHAH SHABBIR ALI HASNI</h1>
+            <p>(Software Developer)</p>
+        </div>
+        <script>
+            const value = prompt("what is your name");
+            console.log(value);
+            var myName = "Syed Shah Shabbir Ali Hasni";
+            alert(myName)
+
+            let color = prompt("Enter the pag let color: string")
+            document.body.style.background = color
+        </script>
+
+</body>
+
+</html>
